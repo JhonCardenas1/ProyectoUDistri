@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table, tr, td{
+    border-style: dotted;
+    background-color: yellow;
+    border-collapse: collapse;
+    border-width: 1px;
+    padding: 2px;
+    /*border-spacing: 2px;*/
+}
+
+table{
+    width: 80%;
+    
+}
+
+th{
+    color: red;
+    font-size: 20px;
+    align-items: center;
+}
+
+.red{
+   border-bottom: dotted red;
+ 
+}
+
+
+
+
+

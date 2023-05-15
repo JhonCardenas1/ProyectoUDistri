@@ -1,0 +1,26 @@
+
+
+u{
+    color: green;
+}
+
+.rojo{
+    color: red;
+}
+
+.linea{
+    text-decoration: overline underline;
+}
+
+.letra{
+    font-size: 50px;
+}
+
+.azul{
+    color: blue;
+}
+
+.rojo2{
+    color: red;
+    text-decoration:underline;
+}

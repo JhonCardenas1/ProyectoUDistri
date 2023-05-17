@@ -81,14 +81,14 @@ ul li a {
 
 .usuario{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 5px;
 
 }
 
 .carrito{
     color: #ec9a1f;
-    font-size: 30px;
+    font-size: 25px;
     margin-right: 5px;
 }
 
@@ -144,8 +144,6 @@ section div a {
     width: 250px;
    
 }
-
-
 
 .producto img {
     max-width: 100%;

@@ -1,7 +1,7 @@
 *{
     margin: 0;
-    box-sizing: inherit
-
+    /*box-sizing: inherit;*/
+    box-sizing: border-box;
 }
 
 /* aca inicia el encabezado*/
@@ -57,7 +57,6 @@
     cursor: pointer;
 }
 
-
 ul{
     display: flex;
     margin-right: 30px;
@@ -81,124 +80,89 @@ ul li a {
 
 .usuario{
     color: #ffffff;
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 5px;
 
 }
 
 .carrito{
     color: #ec9a1f;
-    font-size: 30px;
-    margin-right: 5px;
-}
-
-
-
-.formulario{
-    background-color: violet ;
-    margin: 50px 300px ;
-
-    width: 50%;
-  
-    
-    
-}
-
-.contenedor{
-    background-color: #ec9a1f;
- 
-   
-}
-
-
-/*
-
-
-
-h1{
-    text-align: center;
-    font-size: 40px;
-}
-
-.datos input{
-    font-size: 20px;
-    width: 80%;
-    padding: 10px;
-    border: none;
-}
-
-
-.datos{
-    margin-bottom: 15px;
-    border: 1px solid #aaa;
-}
-
-
-
-
-
-
-
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*aca inicia el pie de pagina*/
-
-.pie-pagina{
-    background-color: #3C4763;
-    width: 100%;
-    height: 100%; 
-
-}
-
-.pie-pagina .grupo1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 20px; 
-}
-
-
-.grupo1 .logo-pie a{
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-}
-
-.grupo1 .logo-pie a img{
-    display: flex;
-    width: 180px;
-    padding: 5px;
-}
-
-.grupo1 .comunicacion h2{
-    color: #ffffff;
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.grupo1 .comunicacion a{
-    text-decoration: none;
-    display: inline-block;
-    color: #ffffff;
-    width: 45px;
-    height: 45px;
-    margin-right: 5px;
     font-size: 25px;
+    margin-right: 5px;
 }
 
-.pie-pagina .grupo2{
-    text-align: center;
-    color: #ffffff;
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
 }
+
+
+/*Aca inicia el Formulario*/
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.contenedor {
+    width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.datos {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.datos i {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.datos input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-left: 40px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media (width: 600px) {
+    .container {
+      width: 300px;
+    }
+  }

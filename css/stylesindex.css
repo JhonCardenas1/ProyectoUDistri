@@ -25,7 +25,6 @@
 }
 
 .logo a img{
-    display: flex;
     width: 180px;
     padding: 5px;
 }
@@ -81,7 +80,7 @@ ul li a {
 
 .usuario{
     color: #ffffff;
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 5px;
 
 }
@@ -188,12 +187,12 @@ section {
 
 .comunicacion h2{
     color: #ffffff;
-    font-size: 23px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
 .comunicacion p{
-    font-size: 18px;
+    font-size: 15px;
     color: #ffffff;
     margin: 10px;
 }

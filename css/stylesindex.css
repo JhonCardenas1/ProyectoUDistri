@@ -92,56 +92,53 @@ ul li a {
     margin-right: 5px;
 }
 
+
 /* Contenido principal */
 main {
-    margin: 16px;
+    width: 100%;
+    display: flex;
+    
 }
 
 /* Sección de productos */
 section {
     margin: 10px;
     padding: 20px; 
-
- 
+    text-align: center;
 }
 
-section div{
+.titulos{
     display: flex;
     justify-content: space-between;
-  
+    align-items: center;
+    margin-bottom: 20px;
+    
 }
 
-section div h2 {
+.titulos h2 {
     font-size: 24px;
-    margin-bottom: 16px;
-    
+    margin-left: 35px;
 }
 
-section div a {
-    
+.titulos a {
     text-decoration: none;
-    color: black;
+    background-color: #3C4763;
+    color: #ffffff;
     font-size: 20px;
-    margin-bottom: 16px;
-    margin-right: 25px;
-    padding: 2px;
-    border: 1px solid #3C4763;
-    border-radius: 3px;
-
-    /*display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;*/
+    margin-right: 35px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
 }
 
 .producto {
     display: inline-block;
-    text-align: center;
-    margin-right: 16px;
-    margin-bottom: 16px;
+    margin: 10px;
+    margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 16px;
-    width: 250px;
+    width: 300px;
    
 }
 
@@ -168,33 +165,45 @@ section div a {
 
 }
 
-.pie-pagina .grupo1{
+.grupo1{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
     padding: 25px 20px; 
 }
 
-
-.grupo1 .logo-pie a{
+.logo-pie a{
     text-decoration: none;
     color: black;
-    font-size: 18px;
+    font-size: 20px;
+
+   
 }
 
-.grupo1 .logo-pie a img{
+.logo-pie img{
     display: flex;
     width: 180px;
     padding: 5px;
 }
 
-.grupo1 .comunicacion h2{
+.comunicacion h2{
     color: #ffffff;
-    font-size: 18px;
+    font-size: 23px;
     margin-bottom: 10px;
 }
 
-.grupo1 .comunicacion a{
+.comunicacion p{
+    font-size: 18px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.comunicacion i{
+    font-size: 20px;
+    color: #c2c2c2
+}
+
+.comunicacion a{
     text-decoration: none;
     display: inline-block;
     color: #ffffff;
@@ -208,3 +217,13 @@ section div a {
     text-align: center;
     color: #ffffff;
 }
+
+
+
+
+
+
+
+
+
+

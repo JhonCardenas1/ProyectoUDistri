@@ -92,18 +92,25 @@ ul li a {
 /* Contenido principal */
 main {
     margin: 16px;
+    width: 100%;
 }
 
 /* Sección de productos */
 section {
     margin: 10px;
     padding: 20px; 
+    text-align: left;
 }
 
+.titulos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
-section h2 {
+.titulos h2 {
     font-size: 24px;
-    margin-bottom: 16px; 
 }
 
 .producto {
@@ -145,13 +152,9 @@ section h2 {
     padding: 8px 16px;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.3s ease;
+    border-radius: 5px;
 }
 
-.product button:hover {
-    background-color: #003A6C;
-}
 
 /*aca inicia el pie de pagina*/
 

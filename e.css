@@ -3,14 +3,6 @@
     margin: 0%;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-/*aca inicia el encabezado*/
-
 header {
     position: relative;
     background-color: #3C4763;
@@ -47,7 +39,7 @@ header {
 
 .buscar {
     position: relative;
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     margin-right: 5%;
@@ -102,10 +94,11 @@ ul li a {
     color: white;
 }
 
+
+
 #menu{
     display: none;
 }
-
 
 /* Contenido principal */
 main {
@@ -170,78 +163,12 @@ section {
 }
 
 
-/*aca inicia el pie de pagina*/
-
-footer{
-    background-color: #3C4763;
-    width: 100%;
-    height: 100%; 
-
-}
-
-.grupo1{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-    padding: 25px 20px; 
-}
-
-.logo-pie a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.logo-pie img{
-    display: flex;
-    width: 180px;
-    padding: 5px;
-}
-
-.comunicacion h2{
-    color: #ffffff;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.comunicacion p{
-    font-size: 15px;
-    color: #ffffff;
-    margin: 10px;
-}
-
-.comunicacion span{
-    font-size: 20px;
-    color: #00a868
-}
-
-.comunicacion a{
-    text-decoration: none;
-    display: inline-block;
-    color: #00a868;
-    width: 45px;
-    height: 45px;
-    margin-right: 5px;
-    font-size: 25px;
-}
-
-.grupo2{
-    text-align: center;
-    color: #ffffff;
-}
-
-
 @media (max-width: 768px) {
-
-    header{
-        width: 100%;
-    }
 
     .navegacion {
       position: relative;
       display: block;
-      width: 50%;
-      top: 20px;
+      width: 60%;
       display: none;
     }
 
@@ -252,12 +179,19 @@ footer{
     .buscar {
         position: relative;
         width: 100%;
-        top: 50px;
+        top: 120px;
         z-index: 221;
         left: 5%;
-    }
+      }
 
-    #menu{
+      .navegacion ul {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: #3C4763;
+      }
+
+      #menu{
         display: inline;
         position: absolute;
         font-size: 25px;
@@ -268,82 +202,32 @@ footer{
         border-radius: 4px;
         cursor: pointer;
         border: 1px solid rgb(221, 221, 221);
-    }
+      }
 
-    .navegacion ul {
-        position: absolute;
-        width: 100%;
-        height: 32vh;
-        background-color: #3C4763;
-    }
-
-    .navegacion ul li {
+      .navegacion ul li {
         display: block;
         margin-top: 20px;
         width: 100%;
         height: 40px;
         text-align: left;
         position: relative;
-        top: 50px;
+        top: 110px;
         padding: 2%;
-    }
+      }
 
-    ul li span {
+      ul li span {
         display: inline-block;
         font-size: 20px;
-    }
+      }
 
-    ul a:hover {
+      ul a:hover {
         background: rgb(35, 36, 51);
-    }
-
-    .producto {
-        display: inline-block;
-        margin: 10px;
-        margin-bottom: 20px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        padding: 16px;
-        width: 100px;
-       
-    }
-
-    .producto h3 {
-        font-size: 15px;
-        margin-top: 3.5px;
-        margin-bottom: 3.5px;
-    }
-    
-    .producto p {
-        font-size: 13px;
-        margin-bottom: 16px;
-    }
-
-    .grupo1{
-        display: block;
-        text-align: center;
-        margin: 5px;
-        padding: 10px;
-
-    }
-
-    .logo-pie{
-        display: inline-flex;
-        margin-bottom: 15px;
-    }
-
-    .comunicacion{
-        margin-bottom: 15px;
-    }
-
+      }
+  
 }
 
-
-
-
-
-
-
-
-
+   
+      
+      
+  
 

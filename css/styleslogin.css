@@ -1,102 +1,113 @@
 *{
-    margin: 0;
-    /*box-sizing: inherit;*/
-    box-sizing: border-box;
+    padding: 0%;
+     margin: 0%;
+     /*box-sizing: border-box;*/
 }
 
-/* aca inicia el encabezado*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-.encabezado{
+/*aca inicia el encabezado*/
+
+header {
+    position: relative;
     background-color: #3C4763;
+    color: #ffffff;
     width: 100%;
-    height: 100px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo{
-    margin-left: 20px;
+    margin: 20px;
 }
-
+ 
 .logo a{
     text-decoration: none;
 }
-
+ 
 .logo a img{
-    display: flex;
     width: 180px;
     padding: 5px;
 }
 
-.buscar{
-    display: flex;
-    width: 40%;
-    justify-content: center;
-
-}
-
-.buscar input{
-    width: 100%;
-    height: 35px;
-    padding: 0 15px;
-    font-size: 15px;
-    border: 2px solid black;
-    border-radius: 12px;
-    align-items: center; 
-}
-
-.lupa{
+.navegacion {
     position: relative;
-    text-align: center;
-    background-color: gray;
-    height: 0;
-    top: 12px;
-    right: 30px;
-    cursor: pointer;
-}
-
-ul{
+    width: 70%;
+    padding: 5px;
+    height: 100%;
     display: flex;
-    margin-right: 30px;
     align-items: center;
+    justify-content: space-between;
 }
 
+.buscar {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+.buscar input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    text-indent: 10px;
+    font-size: 15px;
+}
+
+.buscar span{
+    position: relative;
+    left: -30px;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    z-index: 221;
+  }
+
+ul {
+    width: 30%;
+    text-align: center;
+}
 
 ul li {
-    display: inline-flex;
-    margin: 20px;  
+    display: inline-block;
+    margin-left: 4px;
+    padding: 5px;
+    transition: all 0.5s ease;
+    text-align: center;
+    cursor: pointer;
+    
+} 
+ul li span {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#carrito{
+    color: #ec9a1f;
 }
 
 ul li a {
-    color: #ffffff;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+    font-size: 18px;
+    color: white;
 }
 
-.usuario{
-    color: #ffffff;
-    font-size: 20px;
-    margin-right: 5px;
-
+#menu{
+    display: none;
 }
 
-.carrito{
-    color: #ec9a1f;
-    font-size: 25px;
-    margin-right: 5px;
-}
-
-body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-}
 
 /*Aca inicia el formulario*/
 
@@ -104,12 +115,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    /*height: 80vh;*/
+    margin-top: 100px;
 }
 
 .contenedor {
-    width: 500px;
+    width: 400px;
     margin: auto;
+    height: 250px;
     padding: 40px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -136,7 +149,7 @@ h2 {
 }
 
 .datos input {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -144,8 +157,8 @@ h2 {
     font-size: 16px;
 }
 
-input[type="submit"] {
-    width: 100%;
+.boton {
+    width: 40%;
     background-color: #4caf50;
     color: #fff;
     border: none;
@@ -156,12 +169,72 @@ input[type="submit"] {
     margin-bottom: 25px;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
 
-@media (width: 600px) {
-    .container {
-      width: 300px;
+@media (max-width: 768px) {
+
+    header{
+        width: 100%;
     }
+
+    .navegacion {
+      position: relative;
+      display: block;
+      width: 50%;
+      top: 20px;
+      display: none;
+    }
+
+    .navegacion.navegacionactive {
+        display: inline;
+    }
+
+    .buscar {
+        position: relative;
+        width: 100%;
+        top: 50px;
+        z-index: 221;
+        left: 5%;
+      }
+
+    #menu{
+        display: inline;
+        position: absolute;
+        font-size: 25px;
+        margin-left: 88%;
+        z-index: 222;
+        float: right;
+        padding: 1%;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid rgb(221, 221, 221);
+      }
+
+    .navegacion ul {
+        position: absolute;
+        width: 100%;
+        height: 32vh;
+        background-color: #3C4763;
+      }
+
+      .navegacion ul li {
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        text-align: left;
+        position: relative;
+        top: 50px;
+        padding: 2%;
+      }
+
+       ul li span {
+        display: inline-block;
+        font-size: 20px;
+      }
+
+      ul a:hover {
+        background: rgb(35, 36, 51);
+      }
+
+
 }

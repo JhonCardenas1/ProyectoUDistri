@@ -10,39 +10,39 @@
     <title>Nuestros productos</title>
   </head>
   <body>
-    <header class="encabezado">
+
+    <header>
       <div class="logo">
-        <a href="index.html"
-          ><img src="../img/logo_large.png" title="Logo" alt="Logo"
-        /></a>
+        <a href="index.html"><img src="../img/logo_large.png" alt="Logo del sito web" /></a>
       </div>
 
-      <div class="buscar">
-        <input type="buscar" placeholder="¿Qué producto deseas buscar?" />
-        <div class="lupa">
-          <i class="fas fa-search icon"></i>
+      <span class="fas fa-bars" id="menu" onclick="toggle()"></span>
+
+      <div class="navegacion" id="navegacion">
+        <div class="buscar">
+          <input type="text" placeholder="¿Que producto deseas buscar...?" />
+          <span class="fas fa-search icon"></span>
         </div>
+
+        <ul>
+          <li>
+            
+            <a href="login.html"><span class="fa-solid fa-user"></span><br /> Mi cuenta</a>
+          </li>
+          <li>
+            
+            <a href="index.html"><span class="fa-solid fa-cart-plus" id="carrito"></span><br /> Mi carrito </a>
+          </li>
+        </ul>
       </div>
 
-      <ul>
-        <li>
-          <a href="login.html">
-            <div class="usuario">
-              <i class="fa-solid fa-user"></i>
-            </div>
-            Mi cuenta
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <div class="carrito">
-              <i class="fa-solid fa-cart-plus"></i>
-            </div>
-            Mi carrito
-          </a>
-        </li>
-      </ul>
+      <script>
+        const toggle = () => {
+          document
+            .getElementById("navegacion")
+            .classList.toggle("navegacionactive");
+        };
+      </script>
     </header>
 
     <main>
@@ -133,21 +133,19 @@
       </section>
     </main>
 
-    <footer class="pie-pagina">
+    <footer> 
+
       <div class="grupo1">
         <div class="logo-pie">
-          <a href="index.html"
-            ><img src="../img/logo_large.png" title="Logo" alt="Logo" />Sobre
-            nosotros</a
-          >
+          <a href="index.html"><img src="../img/logo_large.png" title="Logo" alt="Logo"/>Sobre nosotros</a>
         </div>
-
+  
         <div class="comunicacion">
           <h2>Lineas de comunicación</h2>
-          <p>Corre@correo.com</p>
-          <p>Tel: +601555555</p>
+          <p><span class="fas fa-envelope"></span> Correo: petfriendly@petfriendly.com</p>
+          <p><span class="fa-solid fa-phone-volume"></span> Telefono:+601 5555555</p>
         </div>
-
+  
         <div class="comunicacion">
           <h2>Nuestras redes</h2>
           <a href="" class="fa-brands fa-facebook"></a>
@@ -155,13 +153,11 @@
           <a href="" class="fa-brands fa-whatsapp"> </a>
         </div>
       </div>
-
+  
       <div class="grupo2">
-        <span
-          >&copy; 2023 <b>Pet Friendly</b> - Todos los derechos
-          Reservados.</span
-        >
+        <span>&copy; 2023 <b>Pet Friendly</b> - Todos los derechos Reservados.</span>
       </div>
+  
     </footer>
   </body>
 </html>

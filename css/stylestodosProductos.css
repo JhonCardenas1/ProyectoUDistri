@@ -1,92 +1,109 @@
-*{
-    margin: 0;
-    box-sizing: inherit
-
+* {
+    padding: 0%;
+    margin: 0%;
 }
 
-/* aca inicia el encabezado*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-.encabezado{
+/*aca inicia el encabezado*/
+
+header {
+    position: relative;
     background-color: #3C4763;
+    color: #ffffff;
     width: 100%;
-    height: 100px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo{
-    margin-left: 20px;
+    margin: 20px;
 }
-
+ 
 .logo a{
     text-decoration: none;
 }
-
+ 
 .logo a img{
-    display: flex;
     width: 180px;
     padding: 5px;
 }
 
-.buscar{
-    display: flex;
-    width: 40%;
-    justify-content: center;
-
-}
-
-.buscar input{
-    width: 100%;
-    height: 35px;
-    padding: 0 15px;
-    font-size: 15px;
-    border: 2px solid black;
-    border-radius: 12px;
-    align-items: center; 
-}
-
-.lupa{
+.navegacion {
     position: relative;
-    text-align: center;
-    background-color: gray;
-    height: 0;
-    top: 12px;
-    right: 30px;
-    cursor: pointer;
+    width: 70%;
+    padding: 5px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-ul{
+.buscar {
+    position: relative;
+    width: 50%;
     display: flex;
-    margin-right: 30px;
     align-items: center;
+    margin-right: 5%;
+}
+
+.buscar input {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    text-indent: 10px;
+    font-size: 15px;
+}
+
+.buscar span{
+    position: relative;
+    left: -30px;
+    font-size: 20px;
+    color: #000000;
+    cursor: pointer;
+    z-index: 221;
+  }
+
+ul {
+    width: 30%;
+    text-align: center;
 }
 
 ul li {
-    display: inline-flex;
-    margin: 20px;  
+    display: inline-block;
+    margin-left: 4px;
+    padding: 5px;
+    transition: all 0.5s ease;
+    text-align: center;
+    cursor: pointer;
+    
+} 
+ul li span {
+    display: block;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#carrito{
+    color: #ec9a1f;
 }
 
 ul li a {
-    color: #ffffff;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
+    font-size: 18px;
+    color: white;
 }
 
-.usuario{
-    color: #ffffff;
-    font-size: 20px;
-    margin-right: 5px;
-
-}
-
-.carrito{
-    color: #ec9a1f;
-    font-size: 25px;
-    margin-right: 5px;
+#menu{
+    display: none;
 }
 
 /* Contenido principal */
@@ -118,12 +135,12 @@ section {
     text-align: center;
     margin-right: 16px;
     margin-bottom: 16px;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 5px;
     padding: 16px;
     width: 250px;
-   
 }
+
 
 .producto img {
     max-width: 100%;
@@ -158,50 +175,186 @@ section {
 
 /*aca inicia el pie de pagina*/
 
-.pie-pagina{
+/*aca inicia el pie de pagina*/
+
+footer{
     background-color: #3C4763;
     width: 100%;
     height: 100%; 
 
 }
 
-.pie-pagina .grupo1{
+.grupo1{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
     padding: 25px 20px; 
 }
 
-
-.grupo1 .logo-pie a{
+.logo-pie a{
     text-decoration: none;
-    color: black;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 20px;
 }
 
-.grupo1 .logo-pie a img{
+.logo-pie img{
     display: flex;
     width: 180px;
     padding: 5px;
 }
 
-.grupo1 .comunicacion h2{
+.comunicacion h2{
     color: #ffffff;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
-.grupo1 .comunicacion a{
+.comunicacion p{
+    font-size: 15px;
+    color: #ffffff;
+    margin: 10px;
+}
+
+.comunicacion span{
+    font-size: 20px;
+    color: #00a868
+}
+
+.comunicacion a{
     text-decoration: none;
     display: inline-block;
-    color: #ffffff;
+    color: #00a868;
     width: 45px;
     height: 45px;
     margin-right: 5px;
     font-size: 25px;
 }
 
-.pie-pagina .grupo2{
+.grupo2{
     text-align: center;
     color: #ffffff;
+}
+
+
+@media (max-width: 768px) {
+
+    header{
+        width: 100%;
+    }
+
+    .navegacion {
+      position: relative;
+      display: block;
+      width: 50%;
+      top: 20px;
+      display: none;
+    }
+
+    .navegacion.navegacionactive {
+        display: inline;
+    }
+
+    .buscar {
+        position: relative;
+        width: 100%;
+        top: 50px;
+        z-index: 221;
+        left: 5%;
+    }
+
+    #menu{
+        display: inline;
+        position: absolute;
+        font-size: 25px;
+        margin-left: 88%;
+        z-index: 222;
+        float: right;
+        padding: 1%;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid rgb(221, 221, 221);
+    }
+
+    .navegacion ul {
+        position: absolute;
+        width: 100%;
+        height: 35vh;
+        background-color: #3C4763;
+    }
+
+    .navegacion ul li {
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        height: 40px;
+        text-align: left;
+        position: relative;
+        top: 50px;
+        padding: 2%;
+    }
+
+    ul li span {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    ul a:hover {
+        background: rgb(35, 36, 51);
+    }
+
+    .producto {
+        display: inline-block;
+        margin: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #dddddd;
+        border-radius: 5px;
+        padding: 16px;
+        width: 100px;
+       
+    }
+
+    .producto h3 {
+        font-size: 15px;
+        margin-top: 3.5px;
+        margin-bottom: 3.5px;
+    }
+    
+    .producto p {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+
+    .producto .precio{
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+    
+    .producto button {
+        background-color: #003A6C;
+        color: white;
+        border: none;
+        padding: 2px;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .grupo1{
+        display: block;
+        text-align: center;
+        margin: 5px;
+        padding: 10px;
+
+    }
+
+    .logo-pie{
+        display: inline-flex;
+        margin-bottom: 15px;
+    }
+
+    .comunicacion{
+        margin-bottom: 15px;
+    }
+
 }

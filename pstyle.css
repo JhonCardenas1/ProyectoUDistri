@@ -1,96 +1,262 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  padding: 0%;
+  margin: 0%;
+}
+
+header {
+  position: relative;
+  background-color: #3C4763;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  margin: 20px;
+}
+
+.logo a{
+  text-decoration: none;
+}
+
+.logo a img{
+  width: 180px;
+  padding: 5px;
+}
+
+.navegacion {
+  position: relative;
+  width: 70%;
+  padding: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buscar {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.buscar input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+  text-indent: 10px;
+  font-size: 15px;
+}
+
+.buscar span{
+  position: relative;
+  left: -30px;
+  font-size: 20px;
+  color: #000000;
+  cursor: pointer;
+  z-index: 221;
+}
+
+ul {
+  width: 30%;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin-left: 4px;
+  padding: 5px;
+  transition: all 0.5s ease;
+  text-align: center;
+  cursor: pointer;
   
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-  }
+} 
+ul li span {
+  display: block;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+#carrito{
+  color: #ec9a1f;
+}
+
+ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+
+/* Contenido principal */
+main {
+  width: 100%;
+  display: flex; 
+}
+
+/* Sección de productos */
+section {
+  margin: 10px;
+  padding: 20px; 
+  text-align: center;
+}
+
+.titulos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
   
-  header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+}
+
+.titulos h2 {
+  font-size: 24px;
+  margin-left: 35px;
+}
+
+.titulos a {
+  text-decoration: none;
+  background-color: #3C4763;
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 35px;
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.producto {
+  display: inline-block;
+  margin: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  width: 300px;
+ 
+}
+
+.producto img {
+  max-width: 100%;
+}
+
+.producto h3 {
+  font-size: 19px;
+  margin-top: 3.5px;
+  margin-bottom: 3.5px;
+}
+
+.producto p {
+  margin-bottom: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+
+  header{
+      width: 100%;
   }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav li {
-    margin-left: 20px;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  main {
-    margin: 30px;
-  }
-  
-  section {
-    margin-bottom: 30px;
-  }
-  
-  h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-  
-  .products {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .product {
-    width: 300px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .product img {
+
+
+
+  .navega {
+    position: relative;
     display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+
+    top: 160px;
+    display: none;
+    background-color: #000000;
+}
+
+  .navega.navegaactive {
+      display: inline;
+  }
+
+
+  #menu{
+      display: inline;
+      position: absolute;
+      font-size: 25px;
+      margin-left: 88%;
+      z-index: 222;
+      float: right;
+      padding: 1%;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 1px solid rgb(221, 221, 221);
+  }
+
+  .navega {
+      position: absolute;
+      width: 100%;
+      height: 25vh;
+      background-color: black;
+  }
+
+  .navega li {
+      display: block;
+      margin-top: 20px;
+      width: 100%;
+      height: 40px;
+      text-align: left;
+      position: relative;
+      padding: 2%;
+  }
+
+  .navega li span {
+      display: inline-block;
+      font-size: 20px;
+  }
+
+  .navega a:hover {
+      background: rgb(35, 36, 51);
+  }
+
+  .producto {
+      display: inline-block;
+      margin: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 16px;
+      width: 100px;
+     
+  }
+
+  .producto h3 {
+      font-size: 15px;
+      margin-top: 3.5px;
+      margin-bottom: 3.5px;
   }
   
-  .product h3 {
-    font-size: 24px;
-    margin: 10px 0;
+  .producto p {
+      font-size: 13px;
+      margin-bottom: 16px;
   }
-  
-  .product p {
-    margin-bottom: 10px;
+
+  .grupo1{
+      display: block;
+      text-align: center;
+      margin: 5px;
+      padding: 10px;
+
   }
-  
-  .price {
-    font-size: 20px;
-    font-weight: bold;
+
+  .logo-pie{
+      display: inline-flex;
+      margin-bottom: 15px;
   }
-  
-  button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0;
-    cursor: pointer;
-    border-radius: 5px;
+
+  .comunicacion{
+      margin-bottom: 15px;
   }
+
+}

@@ -1,88 +1,114 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda de productos para mascotas</title>
-  <link rel="stylesheet" href="pstyle.css">
-</head>
-<body>
-  <header>
-    <h1>Tienda de productos para mascotas</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/d9171b578b.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./pstyle.css" />
+    <link rel="icon" href="../img/huella.ico">
+    <title>Bienvenidos</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href=""><img src="img/logo_large.png" alt="Logo del sito web" /></a>
+      </div>
 
-  <main>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda de productos para mascotas</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Tienda de productos para mascotas</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+      
 
-  <main>
-    <section>
-      <h2>Nuestros productos</h2>
-      <div class="products">
-        <div class="product">
-          <img src="https://via.placeholder.com/150x150" alt="Producto 1">
-          <h3>Producto 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat eros eget purus volutpat, vel euismod eros pulvinar.</p>
-          <p class="price">$10</p>
-          <button>Añadir al carrito</button>
+      <div class="navegacion">
+        <div class="buscar">
+          <input type="text" placeholder="¿Que producto deseas buscar?..." />
+          <span class="fas fa-search icon"></span>
         </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/150x150" alt="Producto 2">
-          <h3>Producto 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat eros eget purus volutpat, vel euismod eros pulvinar.</p>
-          <p class="price">$20</p>
-          <button>Añadir al carrito</button>
-        </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/150x150" alt="Producto 3">
-          <h3>Producto 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat eros eget purus volutpat, vel euismod eros pulvinar.</p>
-          <p class="price">$30</p>
-          <button>Añadir al carrito</button>
-        </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/150x150" alt="Producto 4">
-          <h3>Producto 4</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat eros eget purus volutpat, vel euismod eros pulvinar.</p>
-          <p class="price">$40</p>
-          <button>Añadir al carrito</button>
-        </div>
-        <div class="product">
-          <img src="https://via.placeholder.com/150x150" alt="Producto 5">
-          <h3>Producto 5</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat eros eget purus volutpat, vel euismod eros pulvinar.</p>
-          <p class="price">$50</p>
-          <button>Añadir al carrito</button>
-        </div>
+
+        <span class="fas fa-bars" id="menu" onclick="toggle()"></span>
         
-  </main>
+        <ul class="navega" id="nav">
+          <li>
+            <span class="fa-solid fa-user"></span><br />
+            <a href="#"> Mi cuenta</a>
+          </li>
+          <li>
+            <span class="fa-solid fa-cart-plus" id="carrito"></span><br />
+            <a href="#"> Mi carrito </a>
+          </li>
+        </ul>
+      </div>
 
-  <footer>
-    <p>&copy; 2023 Tienda de productos para mascotas</p>
-  </footer>
-</body>
+      <script>
+        const toggle = () => {
+          document
+            .getElementById("nav")
+            .classList.toggle("navegaactive");
+        };
+      </script>
+    </header>
+
+    <main>
+        <section>
+          <div>
+          <div class="titulos">
+            <h2>Productos recientes</h2>
+            <a href="todosProductos.html">Más productos</a>
+          </div>
+        
+          <div class="producto">
+              <img src="../img/Comida_perros_1.jpg" alt="Producto 1">
+              <h3>Comida para perros</h3>
+              <p>Deliciosa comida Dog chow para tu gato.</p>
+          </div>
+  
+          <div class="producto">
+            <img src="../img/Comida_perros_1.jpg" alt="Producto 1">
+            <h3>Comida para perros</h3>
+            <p>Deliciosa comida Dog chow para tu gato.</p>
+          </div>
+  
+          <div class="producto">
+            <img src="../img/Comida_perros_1.jpg" alt="Producto 1">
+            <h3>Comida para perros</h3>
+            <p>Deliciosa comida Dog chow para tu gato.</p>
+          </div>
+  
+          <div class="producto">
+            <img src="../img/Comida_perros_1.jpg" alt="Producto 1">
+            <h3>Comida para perros</h3>
+            <p>Deliciosa comida Dog chow para tu gato.</p>
+          </div>
+  
+          <div class="producto">
+            <img src="../img/Camida_Gatos_1.jpg" alt="Producto 2">
+            <h3>Comida para gatos</h3>
+            <p>Deliciosa comida Cat chow para tu gato.</p>
+          </div>
+          <div class="producto">
+            <img src="../img/Comida_perros_1.jpg" alt="Producto 1">
+            <h3>Comida para perros</h3>
+            <p>Deliciosa comida Dog chow para tu gato.</p>
+          </div>
+  
+          <div class="producto">
+            <img src="../img/Comida_perros_1.jpg" alt="Producto 1">
+            <h3>Comida para perros</h3>
+            <p>Deliciosa comida Dog chow para tu gato.</p>
+          </div>
+  
+          <div class="producto">
+            <img src="../img/Camida_Gatos_1.jpg" alt="Producto 2">
+            <h3>Comida para gatos</h3>
+            <p>Deliciosa comida Cat chow para tu gato.</p>
+          </div>
+  
+          <div class="producto">
+            <img src="../img/Camida_Gatos_1.jpg" alt="Producto 2">
+            <h3>Comida para gatos</h3>
+            <p>Deliciosa comida Cat chow para tu gato.</p>
+          </div>
+  
+        </section>
+       </main>
+
+  </body>
 </html>

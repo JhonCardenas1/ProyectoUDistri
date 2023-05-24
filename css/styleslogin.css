@@ -140,6 +140,8 @@ h2 {
     margin-bottom: 20px;
 }
 
+
+
 .datos i {
     position: absolute;
     top: 50%;
@@ -172,10 +174,6 @@ h2 {
 
 @media (max-width: 768px) {
 
-    header{
-        width: 100%;
-    }
-
     .navegacion {
       position: relative;
       display: block;
@@ -191,10 +189,10 @@ h2 {
     .buscar {
         position: relative;
         width: 100%;
-        top: 50px;
+        top: 40px;
         z-index: 221;
         left: 5%;
-      }
+    }
 
     #menu{
         display: inline;
@@ -207,34 +205,33 @@ h2 {
         border-radius: 4px;
         cursor: pointer;
         border: 1px solid rgb(221, 221, 221);
-      }
+    }
 
     .navegacion ul {
         position: absolute;
         width: 100%;
-        height: 32vh;
+        height: 185px;
         background-color: #3C4763;
-      }
+    }
 
-      .navegacion ul li {
+    .navegacion ul li {
         display: block;
         margin-top: 20px;
         width: 100%;
         height: 40px;
         text-align: left;
         position: relative;
-        top: 50px;
+        top: 35px;
         padding: 2%;
-      }
+    }
 
-       ul li span {
+    ul li span {
         display: inline-block;
         font-size: 20px;
-      }
+    }
 
-      ul a:hover {
-        background: rgb(35, 36, 51);
-      }
-
+    .contenedor {
+        width: 300px;
+    }
 
 }
